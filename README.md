@@ -120,8 +120,8 @@ Chapter 4 — Authentication (JWT & Bcrypt)
  Chapter 4 selesai
  🎓 SEMUA CHAPTER SELESAI — Praktikum telah diselesaikan seluruhnya
 Item	Keterangan
-Nama	Sitti Nuerul Annisa
+Nama	Sitti Nurul Annisa
 NIM	105841115522
 Tanggal Mulai	17 Februari 2026
 Tanggal Selesai	20 Februari 2026
-Tanda Tangan	Nisa
+Tanda Tangan	nisa
