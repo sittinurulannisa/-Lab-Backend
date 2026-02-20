@@ -1,98 +1,127 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+Laboratorium Informatika, Universitas Muhammadiyah Makassar
+Nest Logo
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+NPM Version Package License
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+📚 Panduan Lengkap: Backend REST API dengan NestJS & Prisma
+Seri tutorial membangun backend REST API untuk aplikasi blog "Median" (klon sederhana Medium) menggunakan NestJS, Prisma, dan PostgreSQL.
 
-## Description
+📋 Daftar Chapter
+#	Chapter	Topik Utama	Link
+1	Membangun REST API	Setup NestJS, PostgreSQL, Prisma, CRUD Articles, Swagger	📖 Buka Chapter 1
+2	Validasi Input & Error Handling	ValidationPipe, class-validator, ParseIntPipe, Exception Filter	📖 Buka Chapter 2
+3	Data Relasional & User Management	Model User, Relasi One-to-Many, CRUD Users, Sembunyikan Password	📖 Buka Chapter 3
+4	Authentication (JWT & Bcrypt)	Passport, JWT Token, Auth Guard, Bcrypt Hashing, Swagger Auth	📖 Buka Chapter 4
+🎯 Apa yang Akan Kamu Bangun?
++----------------------------------------------+
+|                MEDIAN API                     |
+|                                               |
+|   Articles   -> CRUD + Relasi ke Author       |
+|   Users      -> CRUD + Password Hashing       |
+|   Auth       -> Login + JWT Token             |
+|   Swagger    -> Dokumentasi API Otomatis       |
+|                                               |
+|   Tech Stack:                                 |
+|   - NestJS      (Framework)                   |
+|   - Prisma      (ORM)                         |
+|   - PostgreSQL  (Database)                    |
+|   - Swagger     (API Docs)                    |
+|   - Passport    (Authentication)              |
+|   - Docker      (PostgreSQL Container)        |
++----------------------------------------------+
+🔧 Teknologi yang Digunakan
+Teknologi	Deskripsi
+NestJS	Framework backend Node.js
+Prisma	ORM (Object-Relational Mapper)
+PostgreSQL	Database relasional
+Swagger/OpenAPI	Dokumentasi API otomatis
+TypeScript	Bahasa pemrograman
+Docker	Container untuk PostgreSQL
+Passport	Library authentication
+JWT	Token-based authentication
+Bcrypt	Password hashing
+class-validator	Validasi input
+🛠️ Prasyarat
+Sebelum memulai, pastikan kamu sudah menginstal:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Software	Versi Minimum	Cek Instalasi
+Node.js	v14+	node --version
+npm	v6+	npm --version
+Docker	v20+	docker --version
+VS Code	Latest	-
+🚀 Cara Menggunakan Tutorial Ini
+Ikuti secara berurutan - Setiap chapter membangun di atas chapter sebelumnya
+Ketik kode sendiri - Jangan copy-paste, ketik ulang agar lebih paham
+Eksperimen - Coba ubah kode dan lihat apa yang terjadi
+Baca komentar - Setiap kode dilengkapi penjelasan di komentar
+📖 Ringkasan per Chapter
+Chapter 1: Membangun REST API
+Setup proyek dari nol hingga REST API yang berfungsi penuh dengan dokumentasi Swagger.
 
-## Project setup
+Yang dipelajari: NestJS CLI, Docker PostgreSQL, Prisma schema & migration, CRUD operations, Swagger/OpenAPI
 
-```bash
-$ npm install
-```
+Chapter 2: Validasi Input & Error Handling
+Membuat API lebih robust dengan validasi input dan penanganan error yang baik.
 
-## Compile and run the project
+Yang dipelajari: ValidationPipe, class-validator decorators, ParseIntPipe, Exception Filters, PrismaClientExceptionFilter
 
-```bash
-# development
-$ npm run start
+Chapter 3: Data Relasional & User Management
+Menambahkan model User, relasi dengan Article, dan menyembunyikan data sensitif.
 
-# watch mode
-$ npm run start:dev
+Yang dipelajari: Prisma relations, CRUD Users, ClassSerializerInterceptor, @Exclude decorator
 
-# production mode
-$ npm run start:prod
-```
+Chapter 4: Authentication (JWT & Bcrypt)
+Mengamankan API dengan sistem login dan token-based authentication.
 
-## Run tests
+Yang dipelajari: Passport.js, JWT, Auth Guards, bcrypt password hashing, Swagger Bearer Auth
 
-```bash
-# unit tests
-$ npm run test
+✅ Progress Laporan Praktikum
+Instruksi: Gunakan tabel ini sebagai overview progress keseluruhan. Centang chapter yang sudah selesai dikerjakan. Detail checklist ada di masing-masing chapter.
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
-
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
-
-## Resources
-
-Check out a few resources that may come in handy when working with NestJS:
-
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+Chapter 1 — Membangun REST API
+ Persiapan lingkungan (Node.js, Docker, VS Code)
+ Setup proyek NestJS
+ Setup database PostgreSQL (Docker)
+ Setup Prisma (install, init, schema)
+ Model data & migrasi database
+ Seed database dengan data awal
+ Membuat Prisma Service & Module
+ Setup Swagger
+ Implementasi CRUD Articles (6 endpoint)
+ Konfigurasi Swagger response types
+ 📋 Lihat detail checklist →
+Chapter 2 — Validasi Input & Error Handling
+ Validasi input dengan ValidationPipe & class-validator
+ Whitelist filtering (buang field yang tidak diinginkan)
+ Transformasi parameter URL dengan ParseIntPipe
+ Error handling dengan NotFoundException
+ Membuat PrismaClientExceptionFilter (P2002, P2025)
+ 📋 Lihat detail checklist →
+Chapter 3 — Data Relasional & User Management
+ Membuat model User dan relasi one-to-many dengan Article
+ Migrasi dan seed data user
+ Implementasi CRUD Users (5 endpoint)
+ Menyembunyikan password dengan @Exclude() & ClassSerializerInterceptor
+ Menampilkan relasi author di response Article
+ 📋 Lihat detail checklist →
+Chapter 4 — Authentication (JWT & Bcrypt)
+ Setup Auth module dengan Passport & JWT
+ Membuat endpoint POST /auth/login
+ Membuat JWT Strategy & Auth Guard
+ Melindungi endpoint Users dengan @UseGuards
+ Integrasi Bearer Auth di Swagger
+ Hashing password dengan bcrypt
+ Update login untuk bcrypt
+ 📋 Lihat detail checklist →
+🏁 Status Keseluruhan
+ Chapter 1 selesai
+ Chapter 2 selesai
+ Chapter 3 selesai
+ Chapter 4 selesai
+ 🎓 SEMUA CHAPTER SELESAI — Praktikum telah diselesaikan seluruhnya
+Item	Keterangan
+Nama	Sitti Nuerul Annisa
+NIM	105841115522
+Tanggal Mulai	17 Februari 2026
+Tanggal Selesai	20 Februari 2026
+Tanda Tangan	Nisa
